@@ -16,6 +16,7 @@
 package com.redhat.engineering.srcclr;
 
 import com.redhat.engineering.srcclr.utils.PropertyHandler;
+import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,7 +48,7 @@ public class SourceClearTest
         catch( Exception e )
         {
             logger.debug( "Caught exception executing the wrapper", e );
-            throw e;
+            Assert.fail();
         }
     }
 }
